@@ -1,0 +1,14 @@
+C:\Users\girle\Desktop\Residencia\MODULO 2\.NET\P003\obj\Debug\net8.0\P003.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\girle\Desktop\Residencia\MODULO 2\.NET\P003\obj\Debug\net8.0\P003.AssemblyInfoInputs.cache
+C:\Users\girle\Desktop\Residencia\MODULO 2\.NET\P003\obj\Debug\net8.0\P003.AssemblyInfo.cs
+C:\Users\girle\Desktop\Residencia\MODULO 2\.NET\P003\obj\Debug\net8.0\P003.csproj.CoreCompileInputs.cache
+C:\Users\girle\Desktop\Residencia\MODULO 2\.NET\P003\bin\Debug\net8.0\P003.exe
+C:\Users\girle\Desktop\Residencia\MODULO 2\.NET\P003\bin\Debug\net8.0\P003.deps.json
+C:\Users\girle\Desktop\Residencia\MODULO 2\.NET\P003\bin\Debug\net8.0\P003.runtimeconfig.json
+C:\Users\girle\Desktop\Residencia\MODULO 2\.NET\P003\bin\Debug\net8.0\P003.dll
+C:\Users\girle\Desktop\Residencia\MODULO 2\.NET\P003\bin\Debug\net8.0\P003.pdb
+C:\Users\girle\Desktop\Residencia\MODULO 2\.NET\P003\obj\Debug\net8.0\P003.dll
+C:\Users\girle\Desktop\Residencia\MODULO 2\.NET\P003\obj\Debug\net8.0\refint\P003.dll
+C:\Users\girle\Desktop\Residencia\MODULO 2\.NET\P003\obj\Debug\net8.0\P003.pdb
+C:\Users\girle\Desktop\Residencia\MODULO 2\.NET\P003\obj\Debug\net8.0\P003.genruntimeconfig.cache
+C:\Users\girle\Desktop\Residencia\MODULO 2\.NET\P003\obj\Debug\net8.0\ref\P003.dll
