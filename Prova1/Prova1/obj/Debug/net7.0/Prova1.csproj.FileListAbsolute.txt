@@ -1,0 +1,5 @@
+/home/girleide-macario-santos/Aulas-DotNet/Prova1/obj/Debug/net7.0/Prova1.csproj.AssemblyReference.cache
+/home/girleide-macario-santos/Aulas-DotNet/Prova1/obj/Debug/net7.0/Prova1.GeneratedMSBuildEditorConfig.editorconfig
+/home/girleide-macario-santos/Aulas-DotNet/Prova1/obj/Debug/net7.0/Prova1.AssemblyInfoInputs.cache
+/home/girleide-macario-santos/Aulas-DotNet/Prova1/obj/Debug/net7.0/Prova1.AssemblyInfo.cs
+/home/girleide-macario-santos/Aulas-DotNet/Prova1/obj/Debug/net7.0/Prova1.csproj.CoreCompileInputs.cache
