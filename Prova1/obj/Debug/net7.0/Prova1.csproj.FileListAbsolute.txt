@@ -3,3 +3,13 @@
 /home/girleide-macario-santos/Aulas-DotNet/Prova1/obj/Debug/net7.0/Prova1.AssemblyInfoInputs.cache
 /home/girleide-macario-santos/Aulas-DotNet/Prova1/obj/Debug/net7.0/Prova1.AssemblyInfo.cs
 /home/girleide-macario-santos/Aulas-DotNet/Prova1/obj/Debug/net7.0/Prova1.csproj.CoreCompileInputs.cache
+/home/girleide-macario-santos/Aulas-DotNet/Prova1/bin/Debug/net7.0/Prova1
+/home/girleide-macario-santos/Aulas-DotNet/Prova1/bin/Debug/net7.0/Prova1.deps.json
+/home/girleide-macario-santos/Aulas-DotNet/Prova1/bin/Debug/net7.0/Prova1.runtimeconfig.json
+/home/girleide-macario-santos/Aulas-DotNet/Prova1/bin/Debug/net7.0/Prova1.dll
+/home/girleide-macario-santos/Aulas-DotNet/Prova1/bin/Debug/net7.0/Prova1.pdb
+/home/girleide-macario-santos/Aulas-DotNet/Prova1/obj/Debug/net7.0/Prova1.dll
+/home/girleide-macario-santos/Aulas-DotNet/Prova1/obj/Debug/net7.0/refint/Prova1.dll
+/home/girleide-macario-santos/Aulas-DotNet/Prova1/obj/Debug/net7.0/Prova1.pdb
+/home/girleide-macario-santos/Aulas-DotNet/Prova1/obj/Debug/net7.0/Prova1.genruntimeconfig.cache
+/home/girleide-macario-santos/Aulas-DotNet/Prova1/obj/Debug/net7.0/ref/Prova1.dll
