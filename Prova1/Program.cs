@@ -60,25 +60,31 @@ public void RelatorioIdadeMedico(){
                 } */
 }
 public void RelatorioIdadePaciente(){
-/*var DadosPaciente = DadosPaciente.Where(p => p.Idade >= minimo && p.Idade<= maximo);
+    Console.WriteLine("Digite a idade mínima:");
+    int minimo = int.Parse(Console.ReadLine());
+    Console.WriteLine("Digite a idade máxima:");
+    int maxima = int.Parse(Console.ReadLine());
+    
+    var DadosPaciente = DadosPaciente.Where(p => p.Idade >= minimo && p.Idade<= maximo);
 
-                Console.WriteLine($"Medicos com idade entre {minimo} e {maximo}:");
-                foreach (var pac in DadosPaciente)
-                {
-                    Console.WriteLine($"Nome: {pac.Nome}, Data de nascimento: {pac.DataNascimento}, CPF: {pac.CPF}, Sexo:{pac.Sexo}, Sintomas:{pac.Sintomas} ");
-                } */
+    Console.WriteLine($"Medicos com idade entre {minimo} e {maximo}:");
+        foreach (var pac in DadosPaciente)
+            {
+                Console.WriteLine($"Nome: {pac.Nome}, Data de nascimento: {pac.DataNascimento}, CPF: {pac.CPF}, Sexo:{pac.Sexo}, Sintomas:{pac.Sintomas} ");
+            } 
 }
 public void PacienteSexo(){
     string sexo;
+
     Console.Write("Digite o sexo do paciente");
     sexo = Console.ReadLine();
 
-    var sexo = paciente.DadosPaciente.Where(p => p.Sexo == sexo).ToList();
+    var PacientePorSexo = paciente.DadosPaciente.Where(p => p.Sexo == sexo).ToList();
 
-    Console.WriteLine("Produtos com quantidade em estoque abaixo do limite:");
-    foreach (var produto in produtosAbaixoLimite)
+    Console.WriteLine($"Paciente com o sexo {sexo}");
+    foreach (var Paciente in paciente.DadosPaciente)
     {
-        Console.WriteLine($"Código: {.Codigo}, Nome: {produto.Nome}, Quantidade: {produto.Quantidade}");
+        Console.WriteLine($"Nome: {Paciente.Nome}, Data de nascimento: {Paciente.DataNascimento}, CPF: {Paciente.CPF}, Sexo:{Paciente.Sexo}, Sintomas:{Paciente.Sintomas} ");
     } 
 
 }
@@ -87,7 +93,18 @@ public void PacienteOrdemAlfabetica(){
 }
 
 public void PacienteSintoma(){
+    string sintoma;
 
+    Console.Write("Digite o sexo do paciente");
+    sintoma = Console.ReadLine();
+
+    var PacientePorSintoma = paciente.DadosPaciente.Where(p => p.Sintomas == sintoma).ToList();
+
+    Console.WriteLine($"Paciente com o sexo {sintoma}");
+    foreach (var Paciente in paciente.DadosPaciente)
+    {
+        Console.WriteLine($"Nome: {Paciente.Nome}, Data de nascimento: {Paciente.DataNascimento}, CPF: {Paciente.CPF}, Sexo:{Paciente.Sexo}, Sintomas:{Paciente.Sintomas} ");
+    } 
 }
 }
 public class Program{
