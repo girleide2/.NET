@@ -31,13 +31,24 @@ public class Paciente{
 }
 
     public void pegaDadosPaciente(){
+       
         Console.WriteLine($"Digite o nome do paciente:");
         string Nome = Console.ReadLine();
         Console.WriteLine($"Digite a data de nascimento:");
         int DataNascimento = int.Parse(Console.ReadLine());
+         try{
         Console.WriteLine($"Digite o CPF (Apenas numeros):");
-        string CPF = Console.ReadLine();
-        //var CPFs = DadosPaciente.Where(p => p.CPF == CPF);
+        string cpf = Console.ReadLine();
+
+        }catch (Exception ex)
+            {
+                Console.WriteLine("Erro! digite apenas numeros");
+            }
+        var CPF = DadosPaciente.Where(p => p.CPF == cpf).ToList();
+            if (CPF == cpf){
+                Console.WriteLine($"O CPF {cpf} já existe no sistema");
+                
+            }
         Console.WriteLine($"Digite o sexo do paciente");
         string Sexo = Console.ReadLine();
         Console.WriteLine($"Digite os sintomas do paciente");
