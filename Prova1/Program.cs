@@ -29,33 +29,37 @@ public class Paciente{
     public List<( string Nome, int DataNascimento, string CPF, string Sexo, string Sintomas)> getDadosPaciente(){
     return DadosPaciente;
 }
-
     public void pegaDadosPaciente(){
-       
-        Console.WriteLine($"Digite o nome do paciente:");
-        string Nome = Console.ReadLine();
-        Console.WriteLine($"Digite a data de nascimento:");
-        int DataNascimento = int.Parse(Console.ReadLine());
-         try{
-        Console.WriteLine($"Digite o CPF (Apenas numeros):");
-        string cpf = Console.ReadLine();
+    Console.WriteLine($"Digite o nome do paciente:");
+    string Nome = Console.ReadLine();
+    Console.WriteLine($"Digite a data de nascimento:");
+    int DataNascimento = int.Parse(Console.ReadLine());
+    string cpf = string.Empty;
 
-        }catch (Exception ex)
-            {
-                Console.WriteLine("Erro! digite apenas numeros");
-            }
-        var CPF = DadosPaciente.Where(p => p.CPF == cpf).ToList();
-            if (CPF == cpf){
-                Console.WriteLine($"O CPF {cpf} já existe no sistema");
-                
-            }
-        Console.WriteLine($"Digite o sexo do paciente");
-        string Sexo = Console.ReadLine();
-        Console.WriteLine($"Digite os sintomas do paciente");
-        string Sintomas = Console.ReadLine();
-        var novoPaciente = (Nome, DataNascimento, CPF, Sexo, Sintomas);
-        DadosPaciente.Add(novoPaciente);
+    try
+    {
+        Console.WriteLine($"Digite o CPF (Apenas numeros):");
+        cpf = Console.ReadLine();
     }
+    catch (Exception ex)
+    {
+        Console.WriteLine("Erro! Digite apenas numeros");
+    }
+    var pacienteExistente = DadosPaciente.FirstOrDefault(p => p.CPF == cpf);
+
+    if (!string.IsNullOrEmpty(pacienteExistente.CPF))
+    {
+        Console.WriteLine($"O CPF {cpf} já existe no sistema");
+        return;
+    }
+    Console.WriteLine($"Digite o sexo do paciente");
+    string Sexo = Console.ReadLine();
+    Console.WriteLine($"Digite os sintomas do paciente");
+    string Sintomas = Console.ReadLine();
+    var novoPaciente = (Nome, DataNascimento, cpf, Sexo, Sintomas);
+
+    DadosPaciente.Add(novoPaciente);
+}
 
 public class Relatorios{
     Medico medico = new Medico();
@@ -79,7 +83,7 @@ public class Relatorios{
 }
 
    public void RelatorioIdadePaciente(){
- Console.WriteLine("Digite a idade mínima:");
+    Console.WriteLine("Digite a idade mínima:");
     int minimo = int.Parse(Console.ReadLine());
     Console.WriteLine("Digite a idade máxima:");
     int maximo = int.Parse(Console.ReadLine());
